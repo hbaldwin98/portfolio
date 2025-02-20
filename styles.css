@@ -205,10 +205,10 @@ main {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 80%;
-    max-width: 1200px;
+    max-width: 640px;
 }
 
 .project-card {
@@ -216,11 +216,13 @@ main {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s;
+    color: #fff;
 }
 
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    cursor: pointer;
 }
 
 .project-card img {
