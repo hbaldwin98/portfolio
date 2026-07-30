@@ -4,18 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Hunter Baldwin is a full-stack software engineer building dependable systems with .NET, Angular, SQL Server, and Elasticsearch.">
+  <meta name="description" content="Hunter Baldwin is a full-stack software engineer building dependable systems.">
   <meta id="themeColor" name="theme-color" content="#f7f6f2">
-  <meta property="og:title" content="Hunter Baldwin | Software Engineer">
-  <meta property="og:description" content="Full-stack engineer focused on performant systems and thoughtful software.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hunterbaldwin.com">
   <title>Hunter Baldwin | Software Engineer</title>
-  <link rel="icon" href="resources/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="resources/favicon.svg">
   <script>
     try {
-      const savedTheme = localStorage.getItem('theme');
+      const savedTheme = localStorage.theme;
       if (savedTheme) document.documentElement.dataset.theme = savedTheme;
     } catch { }
   </script>
@@ -27,9 +22,9 @@
 
   <div class="page">
     <header class="site-header">
-      <a class="home-link" href="#top">Hunter Baldwin</a>
-      <nav aria-label="Primary navigation">
-        <a href="resources/Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      <a href="#top">Hunter Baldwin</a>
+      <nav>
+        <a href="resources/Resume.pdf" target="_blank">Resume</a>
         <a href="#musings">Musings</a>
         <button id="themeToggle" type="button" aria-label="Switch to dark mode">
           <img id="themeIcon" src="resources/theme-dark.svg" alt="" width="18" height="18">
@@ -38,17 +33,17 @@
     </header>
 
     <main id="content">
-      <section class="intro" id="top" aria-labelledby="name">
+      <section class="intro" id="top">
         <div class="avatar" aria-hidden="true">HB</div>
         <div>
-          <h1 id="name">Hunter C. Baldwin</h1>
+          <h1>Hunter C. Baldwin</h1>
           <p class="role">Full-stack software engineer</p>
           <p class="location">California / working remotely</p>
         </div>
       </section>
 
-      <section aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
+      <section>
+        <h2>About</h2>
         <p class="lede">
           I build software that is dependable, reliable, and have fun doing it. Software engineering is more than
           writing code, but architecting systems that stand the test of time. I'm always on the lookout for new
@@ -56,9 +51,9 @@
         </p>
       </section>
 
-      <section aria-labelledby="skills-title">
-        <h2 id="skills-title">Skills</h2>
-        <ul class="chips" aria-label="Primary technologies">
+      <section>
+        <h2>Skills</h2>
+        <ul class="chips">
           <li>C#</li>
           <li>.NET</li>
           <li>TypeScript</li>
@@ -70,21 +65,20 @@
         </ul>
       </section>
 
-      <section aria-labelledby="experience-title">
+      <section>
         <div class="section-heading">
-          <h2 id="experience-title">Experience</h2>
+          <h2>Experience</h2>
           <span>2022 - Present</span>
         </div>
 
-        <details class="panel">
+        <details>
           <summary>
             <span>
               <strong>Konexus, Inc.</strong>
               <small>Software Engineer / Remote</small>
             </span>
-            <span class="panel-toggle" aria-hidden="true"></span>
           </summary>
-          <div class="panel-content">
+          <div>
             <ul>
               <li>Made geospatial recipient lookups for emergency alerts four times faster.</li>
               <li>Cut query volume by more than half across core alerting workflows.</li>
@@ -94,72 +88,67 @@
         </details>
       </section>
 
-      <section aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
-        <div class="panel-list">
-          <details class="panel">
+      <section>
+        <h2>Projects</h2>
+          <details>
             <summary>
               <span>
                 <strong>Textly</strong>
                 <small>AI-assisted Markdown writing software</small>
               </span>
-              <span class="panel-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="panel-content">
+            <div>
               <p>A writing environment with hierarchical documents, streamed AI responses, and persistent conversations.
               </p>
               <p class="stack">Svelte / Go / PocketBase / Docker</p>
-              <a href="https://github.com/hbaldwin98/textly" target="_blank" rel="noreferrer">View source &nearr;</a>
+              <a href="https://github.com/hbaldwin98/textly" target="_blank">View source &nearr;</a>
             </div>
           </details>
 
-          <details class="panel">
+          <details>
             <summary>
               <span>
                 <strong>P2P Conference</strong>
                 <small>Real-time voice and screen sharing</small>
               </span>
-              <span class="panel-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="panel-content">
+            <div>
               <p>A multi-user conferencing application with WebSocket signaling and peer-to-peer WebRTC connections.</p>
               <p class="stack">Angular / WebRTC / WebSockets / Node.js</p>
-              <a href="https://github.com/hbaldwin98/p2p-voice-conference" target="_blank" rel="noreferrer">View source
+              <a href="https://github.com/hbaldwin98/p2p-voice-conference" target="_blank">View source
                 &nearr;</a>
             </div>
           </details>
 
-          <details class="panel">
+          <details>
             <summary>
               <span>
                 <strong>Deem Screen</strong>
                 <small>Digital tabletop game master toolkit</small>
               </span>
-              <span class="panel-toggle" aria-hidden="true"></span>
             </summary>
-            <div class="panel-content">
+            <div>
               <p>A focused workspace for clocks, notes, references, and other tools used while running tabletop games.
               </p>
               <p class="stack">Svelte / JavaScript / Vercel</p>
-              <a href="https://github.com/hbaldwin98/deemscreen" target="_blank" rel="noreferrer">View source
+              <a href="https://github.com/hbaldwin98/deemscreen" target="_blank">View source
                 &nearr;</a>
             </div>
           </details>
-        </div>
       </section>
 
-      <section id="musings" aria-labelledby="musings-title">
-        <h2 id="musings-title">Musings</h2>
+      <section id="musings">
+        <h2>Musings</h2>
         <p class="muted">Notes on software, systems, and difficult bugs will live here. Nothing published yet.</p>
       </section>
     </main>
 
     <footer>
-      <span>&copy; <span id="footerDateTime">2026</span> Hunter Baldwin</span>
+      <span>&copy; <span id="year">2026</span> Hunter Baldwin</span>
       <div>
         <a href="mailto:dev@hunterbaldwin.com">Email</a>
-        <a href="https://github.com/hbaldwin98" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/hunterbaldwin" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/hbaldwin98" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/hunterbaldwin" target="_blank">LinkedIn</a>
       </div>
     </footer>
   </div>
