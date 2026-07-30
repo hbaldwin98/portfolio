@@ -2,134 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hunter Baldwin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Hunter Baldwin is a full-stack software engineer building dependable systems with .NET, Angular, SQL Server, and Elasticsearch.">
+  <meta id="themeColor" name="theme-color" content="#f7f6f2">
+  <meta property="og:title" content="Hunter Baldwin | Software Engineer">
+  <meta property="og:description" content="Full-stack engineer focused on performant systems and thoughtful software.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hunterbaldwin.com">
+  <title>Hunter Baldwin | Software Engineer</title>
+  <link rel="icon" href="resources/favicon.svg" type="image/svg+xml">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    } catch { }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <canvas id="static-bg"></canvas>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-    <nav>
-        <ul>
-            <li><a href="#home" target="_self" data-section="home">Home</a></li>
-            <li><a href="#about" target="_self" data-section="about">About</a></li>
-            <li><a href="#projects" target="_self" data-section="projects">Projects</a></li>
-            <li><a href="#resume" target="_self" data-section="resume">Resume</a></li>
-        </ul>
-    </nav>
-    <main>
-        <!-- Home section -->
-        <section id="home" class="page active">
-            <div id="typewriter" class="glitch"></div>
-            <p>Software Developer</p>
-        </section>
+  <div class="page">
+    <header class="site-header">
+      <a class="home-link" href="#top">Hunter Baldwin</a>
+      <nav aria-label="Primary navigation">
+        <a href="resources/Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="#musings">Musings</a>
+        <button id="themeToggle" type="button" aria-label="Switch to dark mode">
+          <img id="themeIcon" src="resources/theme-dark.svg" alt="" width="18" height="18">
+        </button>
+      </nav>
+    </header>
 
-        <!-- About section -->
-        <section id="about" class="page">
-            <h2 class="about-me-header" style="">About Me</h2>
-            <div class="about-container">
-                <div class="about-me">
-                    <p class="about-me-text">
-                        Software Developer with a passion for well-designed and performant systems. Constantly on the
-                        lookout for new and exciting ways to build cool stuff.
-                        <br><br>
-                        I have multiple years of experience building applications on both the frontend and backend in
-                        high-paced environments on complex systems where any mistake was costly. I have a high standard
-                        for the quality of my work and always strive to improve my skills.
-                    </p>
-                </div>
-                <div class="skills">
-                    <div class="skill-container">
-                        <h4>Languages</h4>
-                        <ul class="skill-list">
-                            <li class="skill">HTML</li>
-                            <li class="skill">CSS</li>
-                            <li class="skill">JavaScript</li>
-                            <li class="skill">C#</li>
-                            <li class="skill">Golang</li>
-                            <li class="skill">Python</li>
-                            <li class="skill">SQL</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-container">
-                        <h4>Frameworks & Tools</h4>
-                        <ul class="skill-list">
-                            <li class="skill">Angular</li>
-                            <li class="skill">Node.js</li>
-                            <li class="skill">ASP.NET</li>
-                            <li class="skill">Tailwind</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects section -->
-        <section id="projects" class="page">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <a class="project-card" href="https://github.com/hbaldwin98/deemscreen" target="_blank">
-                    <h3>Deem Screen</h3>
-                    <img src="./resources/deemscreen.png" alt="Deem Screen">
-                    <p>Simple web application to act as a Dungeons & Dragons DM screen. Built using Svelte and deployed
-                        on Vercel.</p>
-                </a>
-                <a class="project-card" href="https://github.com/hbaldwin98/p2p-voice-conference" target="_blank">
-                    <h3>P2P Web Conference</h3>
-                    <img src="./resources/p2pvoiceconference.png" alt="P2P Voice Conference">
-                    <p>
-                        An incomplete project utilizing WebRTC to communicate over Peer-To-Peer with other people in the
-                        lobby. Includes a simple screen share option. Built using Angular and Node.js and deployed on
-                        Vercel.
-                    </p>
-                </a>
-                <a class="project-card" href="https://github.com/hbaldwin98/textly" target="_blank">
-                    <h3>Textly</h3>
-                    <img src="./resources/textly.png" alt="Textly AI assistant">
-                    <p>
-                        Document-organized writing application with AI assistance. Built in AI Chatbot that integrates
-                        directly into the application. Full persistance using Pocketbase for documents and AI conversations.
-                    </p>
-                </a>
-
-
-                <!--<div class="project-card">-->
-                <!--    <img src="" alt="Project 3">-->
-                <!--    <h3>Project 3</h3>-->
-                <!--</div>-->
-                <!--<div class="project-card">-->
-                <!--    <img src="" alt="Project 4">-->
-                <!--    <h3>Project 4</h3>-->
-                <!--</div>-->
-
-            </div>
-        </section>
-
-        <!-- Resume section -->
-        <section id="resume" class="page">
-            <h2>Resume</h2>
-            <iframe class="resume" src="./resources/resume.pdf" width="100%" height="75%"
-                style="max-width: 1000px; max-height: 1200px"></iframe>
-        </section>
-
-
-    </main>
-    <footer>
-        <p id="footer-text" </p>
-        <div id="socials">
-            <a class="social-link" href="https://linkedin.com/in/hunterbaldwin" target="_blank">
-                <img class="social-icon" src="./resources/linkedin-white.png" alt="LinkedIn">
-            </a>
-            <a class="social-link" href="https://github.com/hbaldwin98" target="_blank">
-                <img class="social-icon" src="./resources/github-white.svg" alt="GitHub">
-            </a>
+    <main id="content">
+      <section class="intro" id="top" aria-labelledby="name">
+        <div class="avatar" aria-hidden="true">HB</div>
+        <div>
+          <h1 id="name">Hunter C. Baldwin</h1>
+          <p class="role">Full-stack software engineer</p>
+          <p class="location">California / working remotely</p>
         </div>
+      </section>
+
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p class="lede">
+          I build software that is dependable, reliable, and have fun doing it. Software engineering is more than
+          writing code, but architecting systems that stand the test of time. I'm always on the lookout for new
+          opportunities.
+        </p>
+      </section>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <ul class="chips" aria-label="Primary technologies">
+          <li>C#</li>
+          <li>.NET</li>
+          <li>TypeScript</li>
+          <li>Angular</li>
+          <li>SQL Server</li>
+          <li>Elasticsearch</li>
+          <li>Go</li>
+          <li>Docker</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="experience-title">
+        <div class="section-heading">
+          <h2 id="experience-title">Experience</h2>
+          <span>2022 - Present</span>
+        </div>
+
+        <details class="panel">
+          <summary>
+            <span>
+              <strong>Konexus, Inc.</strong>
+              <small>Software Engineer / Remote</small>
+            </span>
+            <span class="panel-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="panel-content">
+            <ul>
+              <li>Made geospatial recipient lookups for emergency alerts four times faster.</li>
+              <li>Cut query volume by more than half across core alerting workflows.</li>
+              <li>Built .NET services, REST APIs, Angular features, and third-party integrations.</li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="panel-list">
+          <details class="panel">
+            <summary>
+              <span>
+                <strong>Textly</strong>
+                <small>AI-assisted Markdown writing software</small>
+              </span>
+              <span class="panel-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="panel-content">
+              <p>A writing environment with hierarchical documents, streamed AI responses, and persistent conversations.
+              </p>
+              <p class="stack">Svelte / Go / PocketBase / Docker</p>
+              <a href="https://github.com/hbaldwin98/textly" target="_blank" rel="noreferrer">View source &nearr;</a>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>
+              <span>
+                <strong>P2P Conference</strong>
+                <small>Real-time voice and screen sharing</small>
+              </span>
+              <span class="panel-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="panel-content">
+              <p>A multi-user conferencing application with WebSocket signaling and peer-to-peer WebRTC connections.</p>
+              <p class="stack">Angular / WebRTC / WebSockets / Node.js</p>
+              <a href="https://github.com/hbaldwin98/p2p-voice-conference" target="_blank" rel="noreferrer">View source
+                &nearr;</a>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>
+              <span>
+                <strong>Deem Screen</strong>
+                <small>Digital tabletop game master toolkit</small>
+              </span>
+              <span class="panel-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="panel-content">
+              <p>A focused workspace for clocks, notes, references, and other tools used while running tabletop games.
+              </p>
+              <p class="stack">Svelte / JavaScript / Vercel</p>
+              <a href="https://github.com/hbaldwin98/deemscreen" target="_blank" rel="noreferrer">View source
+                &nearr;</a>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="musings" aria-labelledby="musings-title">
+        <h2 id="musings-title">Musings</h2>
+        <p class="muted">Notes on software, systems, and difficult bugs will live here. Nothing published yet.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; <span id="footerDateTime">2026</span> Hunter Baldwin</span>
+      <div>
+        <a href="mailto:dev@hunterbaldwin.com">Email</a>
+        <a href="https://github.com/hbaldwin98" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/hunterbaldwin" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </footer>
-    <script src="script.js" async></script>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

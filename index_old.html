@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Baldwin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="static-bg"></canvas>
+
+    <nav>
+        <ul>
+            <li><a href="#home" target="_self" data-section="home">Home</a></li>
+            <li><a href="#about" target="_self" data-section="about">About</a></li>
+            <li><a href="#projects" target="_self" data-section="projects">Projects</a></li>
+            <li><a href="#resume" target="_self" data-section="resume">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Home section -->
+        <section id="home" class="page active">
+            <div id="typewriter" class="glitch"></div>
+            <p>Software Developer</p>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="page">
+            <h2 class="about-me-header" style="">About Me</h2>
+            <div class="about-container">
+                <div class="about-me">
+                    <p class="about-me-text">
+                        Software Developer with a passion for well-designed and performant systems. Constantly on the
+                        lookout for new and exciting ways to build cool stuff.
+                        <br><br>
+                        I have multiple years of experience building applications on both the frontend and backend in
+                        high-paced environments on complex systems where any mistake was costly. I have a high standard
+                        for the quality of my work and always strive to improve my skills.
+                    </p>
+                </div>
+                <div class="skills">
+                    <div class="skill-container">
+                        <h4>Languages</h4>
+                        <ul class="skill-list">
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">JavaScript</li>
+                            <li class="skill">C#</li>
+                            <li class="skill">Golang</li>
+                            <li class="skill">Python</li>
+                            <li class="skill">SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-container">
+                        <h4>Frameworks & Tools</h4>
+                        <ul class="skill-list">
+                            <li class="skill">Angular</li>
+                            <li class="skill">Node.js</li>
+                            <li class="skill">ASP.NET</li>
+                            <li class="skill">Tailwind</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="page">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <a class="project-card" href="https://github.com/hbaldwin98/deemscreen" target="_blank">
+                    <h3>Deem Screen</h3>
+                    <img src="./resources/deemscreen.png" alt="Deem Screen">
+                    <p>Simple web application to act as a Dungeons & Dragons DM screen. Built using Svelte and deployed
+                        on Vercel.</p>
+                </a>
+                <a class="project-card" href="https://github.com/hbaldwin98/p2p-voice-conference" target="_blank">
+                    <h3>P2P Web Conference</h3>
+                    <img src="./resources/p2pvoiceconference.png" alt="P2P Voice Conference">
+                    <p>
+                        An incomplete project utilizing WebRTC to communicate over Peer-To-Peer with other people in the
+                        lobby. Includes a simple screen share option. Built using Angular and Node.js and deployed on
+                        Vercel.
+                    </p>
+                </a>
+                <a class="project-card" href="https://github.com/hbaldwin98/textly" target="_blank">
+                    <h3>Textly</h3>
+                    <img src="./resources/textly.png" alt="Textly AI assistant">
+                    <p>
+                        Document-organized writing application with AI assistance. Built in AI Chatbot that integrates
+                        directly into the application. Full persistance using Pocketbase for documents and AI conversations.
+                    </p>
+                </a>
+
+
+                <!--<div class="project-card">-->
+                <!--    <img src="" alt="Project 3">-->
+                <!--    <h3>Project 3</h3>-->
+                <!--</div>-->
+                <!--<div class="project-card">-->
+                <!--    <img src="" alt="Project 4">-->
+                <!--    <h3>Project 4</h3>-->
+                <!--</div>-->
+
+            </div>
+        </section>
+
+        <!-- Resume section -->
+        <section id="resume" class="page">
+            <h2>Resume</h2>
+            <iframe class="resume" src="./resources/resume.pdf" width="100%" height="75%"
+                style="max-width: 1000px; max-height: 1200px"></iframe>
+        </section>
+
+
+    </main>
+    <footer>
+        <p id="footer-text" </p>
+        <div id="socials">
+            <a class="social-link" href="https://linkedin.com/in/hunterbaldwin" target="_blank">
+                <img class="social-icon" src="./resources/linkedin-white.png" alt="LinkedIn">
+            </a>
+            <a class="social-link" href="https://github.com/hbaldwin98" target="_blank">
+                <img class="social-icon" src="./resources/github-white.svg" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js" async></script>
+</body>
+
+</html>
